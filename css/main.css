@@ -1,0 +1,511 @@
+/************************************************
+GENERAL
+************************************************/
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    direction: rtl; 
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    /* font-family: 'Rock Salt', cursive; */
+}
+
+/* set text to write left to write (even tho page rtl) */
+h1, h3, p {
+    /* may need to add in more selectors */
+    text-align: right;
+    direction: ltr;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rock Salt', cursive;
+}
+
+p, a {
+    font-size: 0.9em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+ul, li, h5, h6 {
+    direction: ltr;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/************************************************
+HEADING
+************************************************/
+
+header {
+    margin: 0 0 30px 0;
+    padding: 50px 0 0 0;
+    min-width: 100%;
+    position: fixed;
+    height: 80px;
+}
+
+/* aura plus logo */
+header #logo, header #plus-symbol {
+    direction: ltr;
+    /* POSITION NOT FIXED FOR SOME REASON */
+    position: fixed;
+    /* BUG: weird stuff happening in Chrome dev tools not happening in FireFox with same sized screen!!! which to trust? */
+    /* margin: -32px 246px 0; */
+    margin-top: -32px;
+    left: 20px;
+    /* max-width: 30%; */
+    font-size: 1.75em;
+    font-family: 'Rock Salt', cursive;
+}
+
+/*
+header #logo {
+    background-repeat: no-repeat;
+    background-image:url(http://365psd.com/images/premium/thumbs/746/vector-abstract-rainbow-background-683527.jpg);
+    background-size: 70px 70px;
+}
+*/
+
+header #plus-symbol {
+    font-size: 1.5em;
+    /* margin: -31px 200px 0 20px; */
+    margin-top: -31px;
+    left: 153px;
+    font-family: 'Rock Salt', cursive;
+}
+
+/* unordered list containing soc media icons */
+header #social-media-icons {
+    list-style: none;
+    margin: -24px 55% 0;
+    padding: 0;
+    width: 26%;
+}
+
+/* social media icon images next to nav in the header */
+header #social-media-icons li img {
+    display: inline-block;
+    margin: 0 2px;
+    width: 30px;
+    height: 30px;
+    float: right;
+    padding: 0;
+}
+
+/************************************************
+NAVIGATION
+************************************************/
+
+/* actual menu that comes down upon clicking nav logo */
+#mySidenav {
+    direction: ltr;
+    width: 40%;
+    font-size: 1.25em;
+    height: 35%;
+    opacity: 0.6;
+}
+
+/* navigation logo in top left */
+header span {
+    direction: ltr;
+    position: fixed;
+    max-width: 10%;
+    max-height: 10%;
+    /* left: 0;
+    margin-top: -38px */
+    margin: -40px 90% 0 10%;
+    padding: 0;
+}
+
+/* MESSING AROUND WITH RIGHT SIDE NAV */
+header span {
+    margin: -40px 14px 0;
+}
+
+#responsive-nav {
+    display: none;
+}
+
+
+
+/************************************************
+FOOTER
+************************************************/
+
+/* music toolbar on bottom of site */
+footer .toolbar {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    /* whatever color Chris + Bryan want */
+}
+
+footer .toolbar audio {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+/*
+footer .audiojs {
+    width: 400px;
+    max-width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    float: right;
+}
+*/
+
+/*
+#pButton {
+    max-width: 15%;
+    float: left;
+    margin: 0 5% 0 0;
+}
+
+footer #toolbar #progressBar hr {
+    border: 0;
+    display: inline;            
+    background-color: white;
+    height: 1px;
+    width: 70%;
+    margin: 5% 5% 5% 0;
+    float: right;
+}
+*/
+
+
+
+/************************************************
+PAGE: INDEX (HOME)
+************************************************/
+.founder-section {
+    margin: 0;
+    padding: 0;
+    height: 500px;
+}
+
+.founder-section h3 {
+    margin: 80px 0 15px 0;
+    text-align: center;
+}
+
+.founder-section img {
+    max-width: 80%;
+    margin: 0 10%;
+    height: 200px;
+    max-height: 50%;
+}
+
+/* What We Do section */
+.founder-section article {
+    margin: 5%;
+    padding: 0;
+    width: 90%;
+}
+
+/* What We Do */
+.founder-section article h4 {
+    text-align: center;
+}
+
+/* Text under What We Do */
+.founder-section article p {
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.image-gallery {
+    position: relative;
+    right: 77%;
+    width: 1000px;
+    width: 225%;
+    height: 80%;
+    /* possibly set height to be static */
+    max-height: 80%;
+    /*height: 500px;*/
+    display: block;
+    margin-top: -450px;
+    padding: 0;
+}
+
+/* class: .image-gallery */
+#index-gallery ul li img {
+    display: inline-block;
+    float: left;
+    /* width: 350px; */
+    width: 40%;
+    /*height: 35%;*/
+    /* height: 350px; */
+    /* MAX HEIGHT AND MAX WIDTH SHOULD BE ALL THATS NECESSARY */
+    max-height: 100%;
+    max-width: 100%;
+    margin: 2% 8% 2% 1%;
+}
+
+
+
+/************************************************
+PAGE: CONTACTS
+************************************************/
+/*
+#f {
+    position: absolute; --cool scrolling thing
+    overflow-x: scroll;
+} 
+*/
+
+/* div containing all 3 contact things */
+#contacts-section {
+    position: relative;
+    top: 45px;
+    /* width: 1207px; */
+    min-width: 300%;
+    height: 550px;
+    overflow-y: hidden;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+#contacts-section li.contact-bio h3 {
+    text-align: center;
+}
+
+#contacts-section li.contact-bio p {
+    font-size: 0.85em;
+}
+
+#contacts-section li.contact-bio h5, #contacts-section li.contact-bio p, #contacts-section li.contact-bio a {
+    text-align: left;
+}
+
+#contacts-section li.contact-bio .bio-heading {
+    margin-bottom: -15px;
+    padding: 0;
+}
+
+#contacts-section li.contact-bio a {
+    text-decoration: none;
+}
+
+/* bio section images */
+#contacts-section li.contact-bio img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 5px auto;
+}
+
+/* each individual bio section */
+#contacts-section li.contact-bio {
+    float: right;
+    display: inline-block;
+    /*width: 350px;*/
+    width: 30%;
+    /*height: 500px;*/
+    height: 520px;
+    margin: 5px 2%;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+#contacts-section li.contact-bio .contact-details a {
+    display: block;
+    min-height: 20px; /* b/c each is about 20 px tall */
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 5px;
+    margin-left: -43px;
+}
+
+#contacts-section li.contact-bio .contact-details li.phone a {
+    background-image: url('../images/contact-images/phone.png');
+}
+
+#contacts-section li.contact-bio .contact-details li.email a {
+    background-image: url('../images/contact-images/mail.png');
+}
+
+#contacts-section li.contact-bio .contact-details li.twitter a {
+    background-image: url('../images/contact-images/twitter.png');
+}
+
+#contacts-section ul #last-bio {
+    margin-left: 0;
+    padding: 0;
+}
+
+
+
+/************************************************
+PAGE: AUDIO
+************************************************/
+
+#audio-body {
+    /* background-image: url("../images/AuraPlus/idkman.psd"); */
+    background-image: url('../images/AuraPlus/idkman.jpg');
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+}
+
+#audio-heading {
+    text-align: center;
+    margin: 80px 0 0;
+}
+
+/* section containing audio-links */
+#audio-section {
+    max-width: 90%;
+    max-height: 90%;
+    margin: 10% 5% 5% 0; 
+    padding: 0;
+    align-self: center;
+    display: block;
+}
+
+#audio-section #audio-links {
+    width: 100%;
+    padding: 0;
+}
+
+#audio-section #audio-links li {
+    width: 45%;
+    height: 45%;
+    float: left;
+    margin: 0 2.5% 10px;
+    padding: 0;
+    background: #cc0099;
+    text-align: center;
+    color: white;
+    /*
+    display: block;
+    margin: 0 auto;
+    */
+}
+
+#audio-section #audio-links li img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#audio-section #audio-links li p {
+    text-align: justify;
+}
+
+
+
+/************************************************
+PAGE: GALLERY
+************************************************/
+#gallery-body {
+    background-image: url('http://karenpalmer.com/wp-content/uploads/2016/01/Stars.jpg');
+    background-repeat: no-repeat;
+}
+
+#gallery-page-img-gallery {
+    height: 500px;
+    margin: 80px 0 0;
+    width: 1250px;
+    padding: 0;
+    /* overflow-y: hidden; */
+}
+
+#gallery-page-img-gallery li {
+    width: 29%;
+    margin: 2%;
+    background: #ccc;
+    color: black;
+    padding: 0;
+    float: right;
+    display: inline-block;
+}
+
+#gallery-page-img-gallery li img {
+    max-width: 100%;
+}
+
+#gallery-page-img-gallery li p {
+    text-align: center;
+}
+
+#gallery-page-img-gallery ul .big-image img {
+    width: 90%;
+}
+
+
+
+/************************************************
+PAGE: CONTACTS
+************************************************/
+#what-is-aura-div {
+    margin-top: 80px;
+    height: 520px;
+    direction: ltr;
+}
+
+#what-is-aura-div #bryan-poem h4 {
+    text-align: center;
+    font-family: serif;
+    font-size: 2em;
+}
+
+#what-is-aura-div #bryan-poem p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#what-is-aura-div #bryan-poem p, #what-is-aura-div #bryan-poem h4 {
+
+font-family: 'Raleway', sans-serif;
+
+}
+
+
+/************************************************
+COLORS
+************************************************/
+
+body {
+    /* background-color: #ffffcc; */
+    /* background-color: ghostwhite; */
+    background: white;
+    color: black;
+}
+
+header {
+    /* background-color: #ffd9b3; */
+    /* border-bottom: solid; */
+    background: white;
+    border-bottom: ridge;
+}
+
+#contacts-section li.contact-bio a {
+    color: gray;
+}
+
+/* music toolbar on bottom */
+.toolbar {
+    color: #fff;
+    background-color: #000;
+}

@@ -1,0 +1,294 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /************************************************
+    HEADER
+    ************************************************/
+    /*
+    header #logo {
+        margin: -25px 70px 0;
+        font-size: 1.60em;
+    }
+    
+    header #plus-symbol {
+        font-size: 1.35em;
+    }
+    
+    header #social-media-icons {
+        width: 32%;
+    }
+    */
+    
+    #mySidenav {
+        height: 40%;
+    }
+    
+    /************************************************
+    AUDIO PLAYER
+    ************************************************/
+    .audio-player-button.small {
+        /* font-size: change */
+    }
+    
+    .audio-player-progress {
+        /* width: change */
+    }
+}
+
+
+
+
+/* iPhone 6 */
+@media only screen and (min-device-width: 350px) and (max-device-width: 480px) {
+    /************************************************
+    HEADER
+    ************************************************/
+    header #logo {
+        font-size: 1.75em;
+    }
+    
+    header #plus-symbol {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+@media screen and (min-width: 591px) {
+    /************************************************
+    PAGE: INDEX (HOME)
+    ************************************************/
+    .founder-section {
+        width: 45%;
+        /* NOT WORKING B/C % IS OF % OF CONTAINING BLOCK */
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        float: right;
+        height: 565px;
+    }
+    
+    #index-gallery ul li img {
+        max-width: 22%;
+        /*
+        position: relative;
+        margin-right: -15px;*/
+        /*
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        */
+    }
+    
+    #index-gallery {
+        margin-top: -500px;
+        /* UPON ADDING NEW PICTURE, CHANGE THIS RIGHT: X VALUE!!!  */
+        /* right: 150%; */
+        right: 60%;
+        height: 500px;
+        float: left;
+        width: 200%;
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    
+    /************************************************
+    PAGE: CONTACTS
+    ************************************************/
+    #contacts-section {
+        min-width: 150%;
+    }
+    
+    
+    
+    /************************************************
+    AUDIO PLAYER / FOOTER
+    ************************************************/
+    /*
+    .audio-player-progress {
+        width: 60%;
+        margin-right: 130px;
+    }
+    
+    .audio-player-song-name {
+        display: block;
+        margin-right: 200px;s
+    }
+    */
+}
+
+
+
+
+@media screen and (min-width: 718px) {
+    /************************************************
+    NAVIGATION
+    ************************************************/
+    /* take out span, put in links as shown on Chris's design of website??? or do that at wider screen width? */
+    /* fix weird right margin upon screen resize, possibly due to header not having 100% width at all times */
+    
+    header #nav-icon {
+        display: none;
+    }
+    
+    #responsive-nav {
+        display: block;
+        margin-top: -30px;
+        width: 70%;
+        height: 45px;
+        margin-right: 0;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        /*
+        position: relative;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        */
+    }
+    
+    .r-nav-link {
+        direction: ltr;
+        float: right;
+        margin: 2px;
+        margin-left: 1%;
+        font-size: 1em;
+        color: #808e97;
+        padding: 5px;
+        /* text-transform: uppercase; */
+    }
+    
+    #responsive-nav a:link {
+        background-color: white;
+    }
+    
+    #responsive-nav a:visited {
+        background-color: white;
+    }
+    
+    #responsive-nav a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    header nav .selected {
+        color: red;
+    }
+    
+    
+    /************************************************
+    AUDIO PLAYER (FOOTER)
+    ************************************************/
+    /* work on/mess with this */
+    .audio-player-progress {
+        margin-right: 100px;
+    }
+    
+    .audio-player-song-name {
+        margin-right: 300px;
+    }
+    
+    /* image not gonna happen; not enough space, would require lots of work/code; almost certainly not worth it */
+    
+    
+    
+    /************************************************
+    HEADER
+    ************************************************/
+    header #logo {
+        font-size: 2em;
+    }
+    header #plus-symbol {
+        font-size: 2em;
+        margin-left: 20px;
+        margin-top: -35px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1030px) {
+    /************************************************
+    NAVIGATION
+    ************************************************/
+    .r-nav-link {
+        font-size: 1.3em;
+        margin-left: 2%;
+    }
+    
+    #responsive-nav {
+        margin-right: 5%;
+    }
+    
+    
+    
+    /************************************************
+    PAGE: INDEX (HOME)
+    ************************************************/
+    /* 3 column layout */
+    .founder-section {
+        width: 45%;
+        /* NOT WORKING B/C % IS OF % OF CONTAINING BLOCK */
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        float: right;
+        height: 565px;
+    }
+    
+    #index-gallery ul li img {
+        max-width: 22%;
+        /*
+        position: relative;
+        margin-right: -15px; */
+        /*
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        */
+    }
+    
+    #index-gallery {
+        margin-top: -500px;
+        /* right: 150%; */
+        /* !!! */
+        /* UPON ADDING NEW PIC/CHANGING SOMETHING ABOUT WIDTH, CHANGE THIS RIGHT VALUE!!! */
+        right: 2%;
+        height: 500px;
+        float: left;
+        width: 200%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .founder-section {
+        width: 30%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    
+    #index-gallery ul li img {
+        max-width: 15%;
+        margin: auto 1.2%;
+        
+    }
+    
+    
+    
+    /************************************************
+    PAGE: CONTACT
+    ************************************************/
+    #contacts-section {
+        min-width: 100%;
+    }
+    
+    
+    
+    
+}
+
+
+
+
+
+/* NOT SURE IF NECESSARY -- ***might be able to use w3.css */
+/* if setting own, set CONTENT SPECIFIC not device specific */

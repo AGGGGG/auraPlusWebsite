@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/w3.css">
+        <title>AuraPlus[+]</title>
+        <script src="javascript/jquery-3.0.0.min.js"></script>
+        <!-- <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script> -->
+        <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/audio-player-style.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        <nav class="w3-sidenav w3-black w3-card-2" style="display:none; right: 0" id="mySidenav">
+            <a href="javascript:void(0)" onclick="w3_close()"
+               class="w3-closenav w3-large">Close &times;</a>
+            <a href="#">What is Aura?</a>
+            <a href="audio.html">Audio[+]</a>
+            <a href="gallery.html">Gallery[+]</a>
+            <a href="contacts.html">Contact[+]</a>
+            <a href="#">Collabs[+]</a>
+        </nav>
+        
+        <header>
+            <span class="w3-opennav w3-xxlarge" onclick="w3_open()" id="nav-icon">&#9776;</span>
+            <a href="index.html"><h1 id="logo"><strong>AuraPlus</strong></h1></a>
+            <h1 id="plus-symbol">[+]</h1>
+            <nav id="responsive-nav">
+                <a href="#" class="r-nav-link">What is Aura?</a>
+                <a href="audio.html" class="r-nav-link">Audio[+]</a>
+                <a href="gallery.html" class="r-nav-link">Gallery[+]</a>
+                <a href="contacts.html" class="r-nav-link selected">Contact[+]</a>
+                <a href="#" class="r-nav-link">Collabs[+]</a>
+            </nav>
+        </header>
+        <section id="contacts-section">
+            <ul>
+                <li class="contact-bio">
+                    <h3>Christin Henderson</h3>
+                    <img src="images/instagram.png" alt="Picture of Full Name">
+                    <article>
+                        <h5 class="bio-heading">Bio</h5>
+                        <p>Christin Henderson is a visual artist with AuraPlus[+]. Skilled with illustration, graphic design, and painting, he wants to become one of the most influential artists of his generation.</p>
+                    </article>
+                    <h5>Contact Details</h5>
+                    <ul class="contact-details">
+                        <li class="phone">
+                            <a href="tel:323-482-0914">323-482-0914</a>
+                        </li>
+                        <li class="email">
+                            <a href="mailto:christinhendersonchrii@gmail.com">christinhendersonchrii@gmail.com</a>
+                        </li>
+                        <li class="twitter">
+                            <a href="http://twitter.com/cc_stanly" target="_blank">@cc_stanly</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="contact-bio">
+                    <h3>Bryan Otoniel</h3>
+                    <img src="images/instagram.png" alt="Picture of Full Name">
+                    <article>
+                        <h5 class="bio-heading">Bio</h5>
+                        <p>Bryan, stage name BOH (pronounced Bo), is the audio engineer with AuraPlus[+]. He creates hip hop and R&B instrumentals with the music programs Ableton, Logic, & Pro Tools. He also mixes, masters, and song writes. Bryan seeks a platinum plaque record for production & mixing credits.</p>
+                    </article>
+                    <h5>Contact Details</h5>
+                    <ul class="contact-details">
+                        <li class="phone">
+                            <a href="tel:323-829-3486">323-829-3486</a>
+                        </li>
+                        <li class="email">
+                            <a href="mailto:bohenriquez96@gmail.com">bohenriquez96@gmail.com</a>
+                        </li>
+                        <li class="twitter">
+                            <a href="http://twitter.com/intent/tweet?screen_name=twitteraddress" target="_blank">@twitteraddress</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="contact-bio" id="last-bio">
+                    <h3>Andrew Gaut</h3>
+                    <img src="images/instagram.png" alt="Picture of Full Name">
+                    <article>
+                        <h5 class="bio-heading">Bio</h5>
+                        <p>A front end web developer, iOS app developer, and proficient Java coder, Andrew coded this website and has also coded an iOS app. Andrew aspires to get into advanced algorithm development and use his computer science skills to better the world through advances in artificial intelligence.</p>
+                    </article>
+                    <h5>Contact Details</h5>
+                    <ul class="contact-details">
+                        <li class="phone">
+                            <a href="tel:310-990-4380">310-990-4380</a>
+                        </li>
+                        <li class="email">
+                            <a href="mailto:gautandrew@yahoo.com">gautandrew@yahoo.com</a>
+                        </li>
+                        <li class="twitter">
+                            <a href="http://twitter.com/intent/tweet?screen_name=twitteraddress" target="_blank">@twitteraddress</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <div id="audio-player" class="audio-player-wrapper">
+                <span class="audio-player-song-name"></span>
+
+                <div class="audio-player-controls">
+                    <span class="audio-player-progress">
+                        <span class="audio-player-progress-bar"></span>
+                    </span>
+                    <span class="audio-player-button-wrappers">
+                        <a role="button" class="audio-player-button small icon-backward"></a>
+                        <a role="button" class="audio-player-button    audio-player-place-pause-button icon-play"></a>
+                        <a role="button" class="audio-player-button small icon-forward"></a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <script src="javascript/main-scripts.js"></script>
+        <script src="javascript/audio-player.js"></script>
+        <!-- <script src="javascript/socket.js"></script> -->
+    </body>
+</html>

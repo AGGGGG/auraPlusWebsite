@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/w3.css">
+        <title>AuraPlus[+]</title>
+        <script src="javascript/jquery-3.0.0.min.js"></script>
+        <!-- <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script> -->
+        <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/audio-player-style.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    
+    <body id="gallery-body">
+        <nav class="w3-sidenav w3-black w3-card-2" style="display:none; right: 0" id="mySidenav">
+            <a href="javascript:void(0)" onclick="w3_close()"
+               class="w3-closenav w3-large">Close &times;</a>
+            <a href="#">What is Aura?</a>
+            <a href="audio.html">Audio[+]</a>
+            <a href="#">Gallery[+]</a>
+            <a href="contacts.html">Contact[+]</a>
+            <a href="#">Collabs[+]</a>
+        </nav>
+        
+        
+        
+        <header>
+            <span class="w3-opennav w3-xxlarge" onclick="w3_open()" id="nav-icon">&#9776;</span>
+            <a href="index.html"><h1 id="logo"><strong>AuraPlus</strong></h1></a>
+            <h1 id="plus-symbol">[+]</h1>
+            <nav id="responsive-nav">
+                <a href="#" class="r-nav-link">What is Aura?</a>
+                <a href="audio.html" class="r-nav-link">Audio[+]</a>
+                <a href="#" class="r-nav-link selected">Gallery[+]</a>
+                <a href="contacts.html" class="r-nav-link">Contact[+]</a>
+                <a href="#" class="r-nav-link">Collabs[+]</a>
+            </nav>
+        </header>
+        
+        <section id="gallery-page-img-gallery">
+            <ul>
+                <li class="big-image">
+                    <a href="images/Chris-gallery-images/image1.png" target="_blank">
+                        <img src="images/Chris-gallery-images/image1.png" alt="Chris's description***">
+                        <p>FIX--either take out p tag/gray border (since already titled) or figure out other workaround.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="images/Chris-gallery-images/image2.jpeg" target="_blank">
+                        <img src="images/Chris-gallery-images/image2.jpeg" alt="***chris's description***">
+                        <p>TITLE</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="images/Chris-gallery-images/file-page1.jpg" target="_blank">
+                        <img src="images/Chris-gallery-images/file-page1.jpg" alt="***chris's description***">
+                        <p>TITLE</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        
+        <footer>
+            <div id="audio-player" class="audio-player-wrapper">
+            <span class="audio-player-song-name"></span>
+
+                <div class="audio-player-controls">
+                    <span class="audio-player-progress">
+                        <span class="audio-player-progress-bar"></span>
+                    </span>
+                    <span class="audio-player-button-wrappers">
+                        <a role="button" class="audio-player-button small icon-backward"></a>
+                        <a role="button" class="audio-player-button    audio-player-place-pause-button icon-play"></a>
+                        <a role="button" class="audio-player-button small icon-forward"></a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <script src="javascript/main-scripts.js"></script>
+        <script src="javascript/audio-player.js"></script>
+        <!-- <script src="javascript/socket.js"></script> -->
+    </body>
+</html>
